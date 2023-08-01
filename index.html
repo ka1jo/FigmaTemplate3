@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js"></script>
+
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    
+    <div class="all" style="display: flex; justify-content: center; align-items: center;margin-top: 150px;">
+        <div class="calculator">
+            <div class="auto">
+                <input style="border: none; width: 100%; margin: 50px 0px; padding: 10px 0px;" id="inputField" type="text">
+                <div class="buttons" style="display: flex; justify-content: space-between;">
+                    <div class="clear">
+                      <button onclick="deleteAllSymbols('C')" class="button">C</button>
+                    </div>
+                    <div class="divide">
+                        <button class="button">/</button>
+                    </div>
+                    <div class="percent">
+                        <button onclick="addSymbolToInput('%')" class="button">%</button>
+                    </div>
+                    <div class="multi">
+                        <button class="button">X</button>
+                    </div>
+                </div>
+                <div class="buttons" style="display: flex; justify-content: space-between;margin: 10px 0px;">
+                    <div class="clear">
+                      <button onclick="addSymbolToInput('7')" class="numbers1 button">7</button>
+                    </div>
+                    <div class="divide">
+                        <button onclick="addSymbolToInput('8')" class="numbers1 button">8</button>
+                    </div>
+                    <div class="percent">
+                        <button onclick="addSymbolToInput('9')" class="numbers1 button">9</button>
+                    </div>
+                    <div class="multi">
+                        <button onclick="addSymbolToInput('*')" class="button">*</button>
+                    </div>
+                </div>
+                <div class="buttons" style="display: flex; justify-content: space-between; margin: 10px 0px;">
+                    <div class="clear">
+                      <button onclick="addSymbolToInput('4')" class="numbers1 button">4</button>
+                    </div>
+                    <div class="divide">
+                        <button onclick="addSymbolToInput('5')" class="numbers1 button">5</button>
+                    </div>
+                    <div class="percent">
+                        <button onclick="addSymbolToInput('6')" class="numbers1 button">6</button>
+                    </div>
+                    <div class="multi">
+                        <button onclick="addSymbolToInput('-')" class="button">-</button>
+                    </div>
+                </div>
+                <div class="buttons" style="display: flex; justify-content: space-between; margin: 10px 0px;">
+                    <div class="clear">
+                      <button id="button" value="1" onclick="addSymbolToInput('1')" class="numbers1 button">1</button>
+                    </div>
+                    <div class="divide">
+                        <button onclick="addSymbolToInput('2')" class="numbers1 button">2</button>
+                    </div>
+                    <div class="percent">
+                        <button onclick="addSymbolToInput('3')" class="numbers1 button">3</button>
+                    </div>
+                    <div class="multi">
+                        <button onclick="addSymbolToInput('+')" class="button">+</button>
+                    </div>
+                </div>
+                <div class="buttons" style="display: flex; justify-content: space-between;">
+                    <div class="clear">
+                      <button onclick="addSymbolToInput('.')" class="numbers1 button">.</button>
+                    </div>
+                    <div class="divide">
+                        <button onclick="addSymbolToInput('0')" class="numbers1 button">0</button>
+                    </div>
+                    <div class="percent">
+                        <button onclick="addSymbolToInput('%')" class="button">%</button>
+                    </div>
+                    <div class="multi">
+                        <button onclick="getResult('=')" class="button">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+    <script src="index.js"></script>
+</body>
+</html>
+
+
